@@ -7,12 +7,13 @@ public class Radix{
     
   }
   
-/*   public static int length(int n){
-      
+  public static int length(int n){
+    String number = n + "";
+    return number.length();
   }
   
-  public static void merge(MyLinkedList original, MyLinkedList[] buckets){
+/*   public static void merge(MyLinkedList original, MyLinkedList[] buckets){
       
-  } */
-  
+  }
+   */
 }
