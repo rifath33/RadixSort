@@ -6,7 +6,7 @@ public class Tester{
         } */
         
         System.out.println(
-            Radix.length(219392)
+            //Radix.nth(-2,0)
         );
         
         

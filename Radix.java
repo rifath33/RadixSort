@@ -2,9 +2,12 @@ public class Radix{
   
   public static int nth(int n, int col){
     String number = n + "";
+    String result = "";
     /// consider + or -
-    String thing = number.charAt(col) + "";
-    return Integer.parseInt(thing);
+    if(number.charAt(0)==('-') || number.charAt(0)==('+'))
+    result = number.charAt(col+1) + "";
+    else result = number.charAt(col) + "";
+    return Integer.parseInt(result);
     
   }
   
@@ -20,5 +23,7 @@ public class Radix{
     }
     
   }
+  
+   
   
 }
