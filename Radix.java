@@ -24,6 +24,22 @@ public class Radix{
     
   }
   
-   
+  public static void merge( SortableLinkedList original, SortableLinkedList[]buckets){
+      
+  }
+  
+  // no negative values
+  // just a radix sort algorithm
+  
+  public static void radixSortSimple(SortableLinkedList data){
+    //Try to calculate the largest number on your least significant digit pass.
+    //This tells your method how many passes are needed.
+    
+    
+  }
+  
+  public static void radixSort(SortableLinkedList data){
+    
+  }
   
 }
