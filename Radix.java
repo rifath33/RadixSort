@@ -37,11 +37,33 @@ public class Radix{
     //Try to calculate the largest number on your least significant digit pass.
     //This tells your method how many passes are needed.
     
+    int maximumDataLength = 0;
+    
+    SortableLinkedList[] buckets = new SortableLinkedList[10];
+    for(int i = 0; i < buckets.length; i ++){
+        buckets[i] = new SortableLinkedList();
+    }
+    
+    maximumDataLength = 1;
+    
+    for(int i = 0; i < maximumDataLength; i++){
+        
+        while(data.size() > 0){
+            if( i == 0 && length(data.get(i)) > maximumDataLength)
+            maximumDataLength = length(data.get(i));
+            int integerValue = nth(data.get(0),i);
+            buckets[integerValue].add(data.get(0));
+            data.remove(0);
+        }
+        
+        Radix.merge(data, buckets);
+        
+    }
     
   }
   
-  public static void radixSort(SortableLinkedList data){
+/*   public static void radixSort(SortableLinkedList data){
     
-  }
+  } */
   
 }
