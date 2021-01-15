@@ -6,7 +6,9 @@ public class Radix{
     /// consider + or -
     if(number.charAt(0)==('-') || number.charAt(0)==('+'))
     result = number.charAt(col+1) + "";
-    else result = number.charAt(col) + "";
+    else{ result = number.charAt(col) + "";
+    }
+    
     return Integer.parseInt(result);
     
   }
@@ -36,7 +38,6 @@ public class Radix{
   public static void radixSortSimple(SortableLinkedList data){
     //Try to calculate the largest number on your least significant digit pass.
     //This tells your method how many passes are needed.
-    
     int maximumDataLength = 0;
     
     SortableLinkedList[] buckets = new SortableLinkedList[10];
@@ -62,8 +63,8 @@ public class Radix{
     
   }
   
-/*   public static void radixSort(SortableLinkedList data){
-    
-  } */
+  public static void radixSort(SortableLinkedList data){
+    // give up
+  }
   
 }
